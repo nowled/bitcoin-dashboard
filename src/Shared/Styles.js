@@ -1,14 +1,16 @@
-const theme = "dark";
+const theme = 'dark';
 //const theme = 'light';
-export const lightTheme = theme === "light";
+export const lightTheme = theme === 'light';
 
-export const color = lightTheme ? "white" : "#061a44";
-export const color2 = lightTheme ? "white" : "#010e2c";
-export const color3 = lightTheme ? "#09f010" : "#42ff3a";
+export const color = lightTheme ? 'white' : '#061a44';
+export const color2 = lightTheme ? 'white' : '#010e2c';
+export const color3 = lightTheme ? '#09f010' : '#42ff3a';
+
+export const searchInputColor = `background-color: #639a60`;
 
 if (lightTheme) {
-  document.body.style.background = "#e1eaee";
-  document.body.style.color = "#061a44";
+  document.body.style.background = '#e1eaee';
+  document.body.style.color = '#061a44';
 }
 
 export const lightBlueBackground = `background-color: ${color}`;
@@ -21,15 +23,15 @@ export const fontColorWhite = `color: white`;
 //   lightTheme ? "#a9b6ff" : "#121d5b"
 // }`;
 
-export const subtleBoxShadow =`-moz-box-shadow: 0px 0px 4px 1px rgba(17,86,48, 0.6);
+export const subtleBoxShadow = `-moz-box-shadow: 0px 0px 4px 1px rgba(17,86,48, 0.6);
   -webkit-box-shadow: 0px 0px 4px 1px rgba(17,86,48, 0.6);
   box-shadow: 0px 0px 4px 1px rgba(17,86,48, 0.6)`;
 export const greenBoxShadow = `box-shadow: 0px 0px 4px 2px #5fff17`;
 export const redBoxShadow = `box-shadow: 0px 0px 2px 2px #e41111`;
 
-export const fontSizeBig = "font-size: 2em";
-export const fontSize1 = "font-size: 1.5em;";
-export const fontSize2 = "font-size: 1.0em";
-export const fontSize3 = "font-size: .75em";
+export const fontSizeBig = 'font-size: 2em';
+export const fontSize1 = 'font-size: 1.5em;';
+export const fontSize2 = 'font-size: 1.0em';
+export const fontSize3 = 'font-size: .75em';
 
-export const textAlignCenter = "text-align: center;";
+export const textAlignCenter = 'text-align: center;';

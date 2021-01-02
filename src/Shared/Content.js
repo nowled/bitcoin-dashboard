@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppContext } from '../App/AppProvider';
+import { AppContext } from '../components/App/AppProvider';
 
 export default function (props) {
   return (

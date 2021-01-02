@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { AppContext } from '../App/AppProvider';
 
-import {fontSize1, greenBoxShadow, color3} from '../Shared/Styles';
+import { fontSize1, greenBoxShadow, color3 } from '../../Shared/Styles';
 
 const ConfirmedButtonsStyled = styled.div`
   margin: 20px;
@@ -10,9 +10,9 @@ const ConfirmedButtonsStyled = styled.div`
   ${fontSize1}
   padding: 5px;
   cursor: pointer;
-   &:hover{
-     ${greenBoxShadow}
-   }
+  &:hover {
+    ${greenBoxShadow}
+  }
 `;
 
 export const CenterDiv = styled.div`

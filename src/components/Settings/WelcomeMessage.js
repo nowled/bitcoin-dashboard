@@ -5,11 +5,7 @@ function WelcomeMessage() {
   return (
     <AppContext.Consumer>
       {({ firstVisit }) =>
-        firstVisit ? (
-          <div>
-            Welcome to CryptoDash, please select your favorite coins to begin.
-          </div>
-        ) : null
+        firstVisit ? <div>Welcome to Some Real Crypto Coin Shit</div> : null
       }
     </AppContext.Consumer>
   );
