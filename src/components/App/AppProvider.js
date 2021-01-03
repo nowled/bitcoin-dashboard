@@ -43,7 +43,6 @@ export class AppProvider extends Component {
     // We must filter the empty price objects (not in the lecture)
     prices = prices.filter((price) => Object.keys(price).length);
 
-    console.log(prices);
     this.setState({ prices });
   };
 

@@ -5,6 +5,7 @@ import AppBar from '../App/AppNavBar';
 import { AppProvider } from '../App/AppProvider';
 import Settings from '../Settings';
 import Content from '../../Shared/Content';
+import Dashboard from '../Dashboard/index';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <AppBar />
           <Content>
             <Settings />
+            <Dashboard />
           </Content>
         </AppProvider>
       </AppLayout>
