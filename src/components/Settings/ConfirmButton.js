@@ -25,7 +25,9 @@ export default function () {
     <AppContext.Consumer>
       {({ confirmFavorites }) => (
         <CenterDiv>
-          <ConfirmedButtonsStyled onClick={confirmFavorites}>
+          <ConfirmedButtonsStyled
+            onClick={confirmFavorites ? confirmFavorites : null}
+          >
             Confirm Favorites
           </ConfirmedButtonsStyled>
         </CenterDiv>

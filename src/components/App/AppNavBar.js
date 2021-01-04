@@ -20,6 +20,11 @@ const ControlButtonElem = styled.div`
       text-shadow: 0px 0px 60px #eeeeee;
       display: inline-table;
     `}
+  ${(props) =>
+    props.hidden &&
+    css`
+      display: none;
+    `}
 `;
 
 function toUpperCaseStr(transFormedStr) {
@@ -29,8 +34,12 @@ function toUpperCaseStr(transFormedStr) {
 function ControlButton({ name }) {
   return (
     <AppContext.Consumer>
-      {({ page, setPage }) => (
-        <ControlButtonElem active={page === name} onClick={() => setPage(name)}>
+      {({ firstVisit, page, setPage }) => (
+        <ControlButtonElem
+          active={page === name}
+          onClick={() => setPage(name)}
+          hidden={firstVisit && name === 'dashboard'}
+        >
           {toUpperCaseStr(name)}
         </ControlButtonElem>
       )}
