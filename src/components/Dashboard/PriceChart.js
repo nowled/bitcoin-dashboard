@@ -4,15 +4,28 @@ import { Tile } from '../../Shared/Tile';
 import { AppContext } from '../App/AppProvider';
 import ReactHighcharts from 'react-highcharts';
 import HighChartThemes from './HighChartThemes';
+import ChartSelect from './ChartSelect';
 
 ReactHighcharts.Highcharts.setOptions(HighChartThemes);
 
 export default function () {
   return (
     <AppContext.Consumer>
-      {({}) => (
+      {({ historical, changeChartSelect }) => (
         <Tile>
-          <ReactHighcharts config={highChartsConfig()} />
+          <ChartSelect
+            defaultValue='months'
+            onChange={(e) => changeChartSelect(e.target.value)}
+          >
+            <option value='days'> Days</option>
+            <option value='weeks'> Weeks</option>
+            <option value='months'> Months</option>
+          </ChartSelect>
+          {historical ? (
+            <ReactHighcharts config={highChartsConfig(historical)} />
+          ) : (
+            <div>Loading Historical Data</div>
+          )}
         </Tile>
       )}
     </AppContext.Consumer>
