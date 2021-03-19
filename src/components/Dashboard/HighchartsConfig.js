@@ -1,7 +1,7 @@
 export default function (historical) {
   return {
     title: {
-      text: 'Cryptocurrency and the shit they are going through',
+      text: 'Cryptocurrency and their up to date stats',
     },
 
     yAxis: {

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { DeletableTile } from '../../Shared/Tile';
+import ToolTips from '../Tooltip/Tooltip';
 
 export const CoinHeaderGridStyled = styled.div`
   display: grid;
@@ -25,9 +26,14 @@ export default function ({ name, symbol, topSection }) {
     <CoinHeaderGridStyled>
       <div>{name}</div>
       {topSection ? (
-        <DeleteIcon> X </DeleteIcon>
+        <DeleteIcon>
+          {' '}
+          <ToolTips toolTipText='Delete Coin'> X </ToolTips>{' '}
+        </DeleteIcon>
       ) : (
-        <CoinSymbol>{symbol}</CoinSymbol>
+        <CoinSymbol>
+          <ToolTips toolTipText='Add Coin'>{symbol}</ToolTips>
+        </CoinSymbol>
       )}
     </CoinHeaderGridStyled>
   );

@@ -19,9 +19,6 @@ export const greenBackgroundColor = `background-color: ${color3};`;
 
 export const fontColorGreen = `color: #03A9F4`;
 export const fontColorWhite = `color: white`;
-// export const subtleBoxShadow = `box-shadow: 0px 0px 5px 1px ${
-//   lightTheme ? "#a9b6ff" : "#121d5b"
-// }`;
 
 export const subtleBoxShadow = `-moz-box-shadow: 0px 0px 4px 1px rgba(17,86,48, 0.6);
   -webkit-box-shadow: 0px 0px 4px 1px rgba(17,86,48, 0.6);

@@ -28,7 +28,7 @@ export default function () {
           <ConfirmedButtonsStyled
             onClick={confirmFavorites ? confirmFavorites : null}
           >
-            Confirm Favorites
+            Charts & Graph Readings
           </ConfirmedButtonsStyled>
         </CenterDiv>
       )}
